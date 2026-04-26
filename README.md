@@ -95,14 +95,14 @@ graph TD
 ### Схема lab5
 ```mermaid
 graph TD
-    subgraph T [T: Етап тестування - pytest]
+    subgraph T [ Етап тестування - pytest]
         T1[ DataLoader] --> T2[ Запуск тестів]
         T2 --> T3{T3: Валідація пройдена?}
         T3 -- No [ValidationError] --> T4[ Тест пройдено успішно]
         T3 -- Yes --> T5[ Тест пройдено успішно]
     end
 
-    subgraph M [M: Основна програма - main.py]
+    subgraph M [ Основна програма - main.py]
         A([ Початок]) --> B[ Ініціалізація DataLoader]
         B --> C[ Виклик методу класу]
         C --> F[ SQL запит до БД]
@@ -110,18 +110,17 @@ graph TD
         G --> H[ Створення об'єкта dataclass]
         H --> I[ Повернення об'єкта в main]
         I --> J[ Вивід даних у консоль]
-        J --> K([ Закриття з'єднання])
+        J --> K[ Закриття з'єднання]
         
 
     end
 
     T -.-> M
-    K --> W([H: Кінець])
+    K --> W([Кінець])
 
-    %% Стилізація
-    style T fill:#fce4ec,stroke:#880e4f,stroke-dasharray: 5 5
-    style E fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style B fill:#e1f5fe,stroke:#01579b
+   ```
+отака історія)
+
 
 
     
