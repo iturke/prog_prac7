@@ -1,0 +1,7 @@
+type,block_id,vote,view
+block,0x123,,3
+vote,,0x335,
+vote,,0x123,
+block,0x856,,2
+vote,,0x156,
+block,0x123,,1
